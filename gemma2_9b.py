@@ -1,6 +1,5 @@
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 import transformers
-import torch
 
 def main():
     quantization_config = BitsAndBytesConfig(load_in_8bit=True)

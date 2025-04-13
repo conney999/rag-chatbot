@@ -5,4 +5,56 @@ salloc --account=cse592w25_class \
        --cpus-per-task=4 \
        --gpus=1 \
        --mem=64G \
-       --time=0:60:00
+       --time=0:10:00
+
+
+******************** minillm **********************************
+python chatbot.py --embed_model all-minilm --gen_model gemma2-9b --question_answer
+python chatbot.py --embed_model all-minilm --gen_model gemma2-9b --answer
+
+python chatbot.py --embed_model all-minilm --gen_model gemma2-2b --question_answer
+python chatbot.py --embed_model all-minilm --gen_model gemma2-2b --answer
+
+python chatbot.py --embed_model all-minilm --gen_model t5 --question_answer
+python chatbot.py --embed_model all-minilm --gen_model t5 --answer
+
+python chatbot.py --embed_model all-minilm --gen_model flan --question_answer
+python chatbot.py --embed_model all-minilm --gen_model flan --answer
+
+python chatbot.py --embed_model all-minilm --gen_model flanxl --question_answer
+python chatbot.py --embed_model all-minilm --gen_model flanxl --answer
+
+******************** bge *************************************************
+
+python chatbot.py --embed_model bge --gen_model gemma2-9b --question_answer
+python chatbot.py --embed_model bge --gen_model gemma2-9b --answer
+
+python chatbot.py --embed_model bge --gen_model gemma2-2b --question_answer
+python chatbot.py --embed_model bge --gen_model gemma2-2b --answer
+
+python chatbot.py --embed_model bge --gen_model t5 --question_answer
+python chatbot.py --embed_model bge --gen_model t5 --answer
+
+python chatbot.py --embed_model bge --gen_model flan --question_answer
+python chatbot.py --embed_model bge --gen_model flan --answer
+
+python chatbot.py --embed_model bge --gen_model flanxl --question_answer
+python chatbot.py --embed_model bge --gen_model flanxl --answer
+
+
+******************** mpnet *************************************************
+
+python chatbot.py --embed_model mpnet --gen_model gemma2-9b --question_answer
+python chatbot.py --embed_model mpnet --gen_model gemma2-9b --answer
+
+python chatbot.py --embed_model mpnet --gen_model gemma2-2b --question_answer
+python chatbot.py --embed_model mpnet --gen_model gemma2-2b --answer
+
+python chatbot.py --embed_model mpnet --gen_model t5 --question_answer
+python chatbot.py --embed_model mpnet --gen_model t5 --answer
+
+python chatbot.py --embed_model mpnet --gen_model flan --question_answer
+python chatbot.py --embed_model mpnet --gen_model flan --answer
+
+python chatbot.py --embed_model mpnet --gen_model flanxl --question_answer
+python chatbot.py --embed_model mpnet --gen_model flanxl --answer

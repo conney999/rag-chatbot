@@ -2,3 +2,5 @@ data/*
 .DS_Store
 __pycache__/
 *.pyc
+RAG_small_1.py
+config.py
