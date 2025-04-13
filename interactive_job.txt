@@ -1,0 +1,8 @@
+salloc --account=cse592w25_class \
+       --partition=gpu_mig40,gpu,spgpu \
+       --nodes=1 \
+       --ntasks=1 \
+       --cpus-per-task=4 \
+       --gpus=1 \
+       --mem=64G \
+       --time=0:60:00
